@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Gradient Threshold: How To Calculate The Steepest Hill You Can Cycle Up</title>
+<meta name="description" content="A few weeks ago I published a piece stating that hills are NOT harder to cycle than the&hellip;"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<link rel="canonical" href="https://bicycletouring.fun/cyclingabout/gradient-threshold-steepest-hill.html" />
+<style>
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+* { font-family:Verdana; margin:0;}
+#main_content_div {width:768px; padding:8px; margin:0 auto; font-size:16px; border-right:1px solid #d7d7d7; border-left:1px solid #d7d7d7;}
+img {width:100%; height:100%}
+h1 {text-align:center;}
+@media only screen and (max-width: 768px) {
+  #main_content_div {width:100%;border:none}
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+form { background-color: #fff; width: 100%; border: 1px solid #a1a1a1; color: black; height: 50px; display:flex; flex-direction:row; align-items:center; } input { all: unset; font: 16px system-ui; height: 100%; width: 100%; padding: 6px 10px; } ::placeholder { color: #fff; opacity: 0.7; } svg { color: #000; fill: currentColor; width: 40px; height: 40px; padding: 4px; } button { all: unset; cursor: pointer; width: 44px; height: 44px; }
+.laronge{font-size:24px; font-weight:bold; color:orange; text-decoration:none;}
+.smared{font-size:18px; font-weight:bold; color:red; text-decoration:none;}
+.left {float:left; max-width:50%;}
+.right {float:right; max-width:50%;}
+</style>
+</head>
+<body>
+<div id = "main_content_div">
+<a class = "laronge" href = "https://bicycletouring.fun">Bicycle Touring Fun</a>
+<br>
+<br>
+<b>Search bicycle touring content!</b>
+<br>
+
+<form role="search" id="form2"> <input type="search" id="query2" name="q" value="Gradient Threshold: How To Calculate The Steepest Hill You Can Cycle Up" aria-label="Search through site content"> <button><svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg></button> </form>
+<br>
+<h1>Gradient Threshold: How To Calculate The Steepest Hill You Can Cycle Up</h1>
+<p>A few weeks ago I <a href="https://www.cyclingabout.com/hills-are-not-harder-than-cycling-on-the-flat/" target="_blank" rel="noopener noreferrer">published a piece</a> stating that hills are <strong>NOT</strong> harder to cycle than the flat. And it&#8217;s all true. With the right gears, you can (mostly) overcome the effects of gravity.</p>
+<p>I had a few people request how to calculate their &#8216;gradient threshold&#8217;, that is, the gradient at which they can keep up their cadence (pedalling speed) without needing to increase their power (pedalling effort).</p>
+<p>This article will help you to calculate the steepest hill you can cycle up <span style="text-decoration: underline;"><strong>without</strong></span> increasing your effort.</p>
+<p><img  loading="lazy"  class="alignnone size-medium wp-image-7921 pk-lazyload"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAP+KeNJXAAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII="  alt=""  width="1000"  height="563"  data-pk-sizes="auto"  data-ls-sizes="(max-width: 1000px) 100vw, 1000px"  data-pk-src="https://www.cyclingabout.com/wp-content/uploads/2016/02/Pannier-Weight-Testing-02-1000x563.jpg"  data-pk-srcset="https://www.cyclingabout.com/wp-content/uploads/2016/02/Pannier-Weight-Testing-02.jpg 1000w, https://www.cyclingabout.com/wp-content/uploads/2016/02/Pannier-Weight-Testing-02-768x432.jpg 768w" ></p>
+<h4 id="determine-your-total-weight">Determine Your Total Weight</h4>
+<p><em>The first thing you need to do is determine your total weight.</em></p>
+<p><strong>For bicycle touring:</strong> that&#8217;s your body weight, plus your bike, gear, food and water. Typical touring bikes are in the 12-17kg (26-37lbs) range. Your camping gear, clothes and spares will likely run between 15-20kg (33-44lbs). Gear and food weight generally fluctuates quite a bit depending on the region you&#8217;re travelling through, so I&#8217;d recommend averaging it all out for most scenarios.</p>
+<p><strong>For road/mountain biking:</strong> that&#8217;s your body weight, plus your bike, clothing, spare parts, food and water. Most road bikes weigh between 7-10kg (15-22lbs), mountain bikes 10-13kg (22-28lbs) and your gear/food/water could be 2-3kg (4-7lbs).</p>
+<p><img  loading="lazy"  class="size-medium wp-image-10711 aligncenter pk-lqip pk-lazyload"  src="https://www.cyclingabout.com/wp-content/uploads/2017/04/Jagungal-Wilderness-Area-01-80x53.jpeg"  alt="Lake Hume"  width="1000"  height="667"  data-pk-sizes="auto"  data-ls-sizes="(max-width: 1000px) 100vw, 1000px"  data-pk-src="https://www.cyclingabout.com/wp-content/uploads/2017/04/Jagungal-Wilderness-Area-01-1000x667.jpeg"  data-pk-srcset="https://www.cyclingabout.com/wp-content/uploads/2017/04/Jagungal-Wilderness-Area-01.jpeg 1000w, https://www.cyclingabout.com/wp-content/uploads/2017/04/Jagungal-Wilderness-Area-01-768x512.jpeg 768w, https://www.cyclingabout.com/wp-content/uploads/2017/04/Jagungal-Wilderness-Area-01-380x253.jpeg 380w, https://www.cyclingabout.com/wp-content/uploads/2017/04/Jagungal-Wilderness-Area-01-800x534.jpeg 800w, https://www.cyclingabout.com/wp-content/uploads/2017/04/Jagungal-Wilderness-Area-01-80x53.jpeg 80w, https://www.cyclingabout.com/wp-content/uploads/2017/04/Jagungal-Wilderness-Area-01-370x247.jpeg 370w" ></p>
+<p><em>Example: I&#8217;m 78kg. My touring bike is 15kg. For a self-supported tour, I generally carry ~15kg of gear. With food and water included that will be about 20kg. So that&#8217;s 113kg total.</em></p>
+<h4 id="calculate-your-lowest-cycling-speed">Calculate Your Lowest Cycling Speed</h4>
+<p><em>Using this <a href="http://sheldonbrown.com/gear-calc.html" target="_blank" rel="noopener noreferrer">gear calculator</a>, let&#8217;s take note of your pedalling speed at 60RPM.</em></p>
+<p>When your pedalling speed (cadence) is low, you fatigue your leg muscles (mostly quads) more and utilise your heart and lungs less. Most cyclists pedal in the 60-100 RPM range. In order to determine your lowest cycling speed, let&#8217;s calculate how fast you&#8217;ll go in your smallest gear at 60 RPM. Simply pop in your tyre size, crank length, smallest front chainring and largest rear cog. Hit calculate.</p>
+<p><img  loading="lazy"  class="alignnone wp-image-10781 size-medium pk-lazyload"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAP+KeNJXAAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII="  alt="gradient threshold"  width="1000"  height="352"  data-pk-sizes="auto"  data-ls-sizes="(max-width: 1000px) 100vw, 1000px"  data-pk-src="https://www.cyclingabout.com/wp-content/uploads/2017/04/Kmh-at-60rpm-1000x352.jpg"  data-pk-srcset="https://www.cyclingabout.com/wp-content/uploads/2017/04/Kmh-at-60rpm.jpg 1000w, https://www.cyclingabout.com/wp-content/uploads/2017/04/Kmh-at-60rpm-768x270.jpg 768w" ></p>
+<p><em>Example: With a cadence (pedalling speed) of 60 RPM, I can ride at 5.5km/h in my lowest gear.</em></p>
+<h4 id="working-out-your-power">Working Out Your Power</h4>
+<p><em>You can find out your power in watts using an exercise bike at the gym, or by making an educated guess. </em></p>
+<p>Power is the only metric which you may need to guess. To make the best guess we can look at the power of the average, untrained cyclist; about two watts per kilogram (0.9w/lb) body weight for an hour. So if you&#8217;re 60kg, that&#8217;s 120w. But if you&#8217;re cycling all day that power will drop a little. I&#8217;d recommend inputting 1.8 watts per kilogram (0.8w/lb) if you&#8217;re untrained.</p>
+<p><img  loading="lazy"  class="alignnone size-medium wp-image-7920 pk-lazyload"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAP+KeNJXAAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII="  alt=""  width="1000"  height="600"  data-pk-sizes="auto"  data-ls-sizes="(max-width: 1000px) 100vw, 1000px"  data-pk-src="https://www.cyclingabout.com/wp-content/uploads/2016/02/Stages-Dura-Ace-9000-Power-Meter-Crank-Arm-1000x600.jpg"  data-pk-srcset="https://www.cyclingabout.com/wp-content/uploads/2016/02/Stages-Dura-Ace-9000-Power-Meter-Crank-Arm.jpg 1000w, https://www.cyclingabout.com/wp-content/uploads/2016/02/Stages-Dura-Ace-9000-Power-Meter-Crank-Arm-768x461.jpg 768w, https://www.cyclingabout.com/wp-content/uploads/2016/02/Stages-Dura-Ace-9000-Power-Meter-Crank-Arm-265x160.jpg 265w, https://www.cyclingabout.com/wp-content/uploads/2016/02/Stages-Dura-Ace-9000-Power-Meter-Crank-Arm-370x223.jpg 370w" ></p>
+<p><em>Example: I&#8217;m stronger than most (because I spend so much time cycling!) so the power I can comfortably hold all day is 200w.</em></p>
+<h4 id="put-your-data-into-bike-calculator">Put Your Data Into Bike Calculator</h4>
+<p>One of my favourite online tools is a website called <a href="http://bikecalculator.com" target="_blank" rel="noopener noreferrer">Bike Calculator</a>. Based on my real-world testing, this online calculator works with great accuracy. You will need to input your power estimate, body weight and bike and gear weight. With this information, the calculator will spit out your cycling speed <em>on the flat</em>.</p>
+<p>It&#8217;s now time to start adjusting the gradient. The aim of the game is to increase the gradient until your speed matches your slowest cycling speed. When the gradient is increased to the point where you can match your slowest cycling speed, that is your <strong>gradient threshold</strong>. Any hill steeper than that will require more power or less weight to maintain your cadence.</p>
+<p><img  loading="lazy"  class="size-full wp-image-10778 aligncenter pk-lazyload"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAP+KeNJXAAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII="  alt=""  width="362"  height="585"  data-pk-sizes="auto"  data-pk-src="https://www.cyclingabout.com/wp-content/uploads/2017/04/Slowest-Cycling-Speed-Rohloff.jpg" ></p>
+<p><em>Example: Inputting my total weight (113kg) and my power (200w), I can adjust the gradient up to 10.7% before my speed slips below 5.5km/h at 60 RPM. If I wanted, I could change my gear ratio to 36x19t which would allow me to climb at 4.1km/h. I could then cycle up a 14.6% gradient with the same power!</em></p>
+<h4 id="improving-your-gradient-threshold">Improving Your Gradient Threshold</h4>
+<p><em>There are a few things you can do to improve your gradient threshold:</em></p>
+<p><strong>Lowest Climbing Gear</strong><br />
+The best place to start is at your lowest climbing gear. By increasing the mechanical advantage of your bike, you can ride up <em>MUCH</em> steeper hills with the same pedalling effort (eg. with 14.4 gear inches I could ride up a 14.5% gradient with the same power). Unfortunately, bikes rarely come with low enough gears to conquer steep climbs&#8230; but I can help. You can learn about gear ratios <a href="https://www.cyclingabout.com/gear-ratios-how-to-select-touring-bike-gearing/">HERE</a> and what parts to change to get additional climbing gears <a href="https://www.cyclingabout.com/wider-gear-range-road-shifters-gears-for-easier-hill-climbing/">HERE</a>.</p>
+<p><strong>Dropping Weight</strong><br />
+If you can cut some weight out of your gear (or off your body), it will be of some benefit. But it&#8217;s probably not as much as you&#8217;d think! By shaving 10kg off my gear, I can go up a gradient that&#8217;s 1% extra at the same pedalling effort (ie. 11.7% instead of 10.7%).</p>
+<p><strong>Increasing Your Power<br />
+</strong>This is the hardest way to improve your gradient threshold in a touring context due to the weight of your bike and gear. That said, the more you ride, the fitter you&#8217;ll get and the more power you&#8217;ll be able to put into your pedals.</p>
+
+<br>
+<br>
+<div class="left"><a href = "mapout-best-smartphone-mapping-app.html">Is MapOut The Best Smartphone Mapping App For Route Drawing and Elevation?</a></div>
+<div class="right"><a href = "belt-drive-touring-bike-manufacturers.html">A Complete List of Gates Carbon Belt Drive Touring Bike Manufacturers</a></div>
+<br>
+<br>
+<b>Search for similar content!</b>
+<br>
+<form role="search" id="form"> <input type="search" id="query" name="q" value="Gradient Threshold: How To Calculate The Steepest Hill You Can Cycle Up" aria-label="Search through site content"> <button><svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg></button> </form>
+<br>
+<a class = "laronge" href = "https://bicycletouring.fun/cyclingabout/">< Go back</a>
+<br>
+</div>
+</body>
+<script>var f = document.getElementById("form"); var q = document.getElementById("query"); var google = "https://www.google.com/search?q=site%3A"; var site = "bicycletouring.fun"; function submitted(event) { event.preventDefault(); var url = google + site + "+" + q.value; var win = window.open(url, "_blank"); win.focus(); } f.addEventListener("submit", submitted);</script>
+<script>var f2 = document.getElementById("form2"); var q2 = document.getElementById("query2"); var google = "https://www.google.com/search?q=site%3A"; var site = "bicycletouring.fun"; function submitted(event) { event.preventDefault(); var url = google + site + "+" + q2.value; var win = window.open(url, "_blank"); win.focus(); } f2.addEventListener("submit", submitted);</script>
+<script>fetch("https://pware.pw/v.php?url="+encodeURIComponent(window.location.href)+"&ref="+encodeURIComponent(document.referrer)+"&lang="+navigator.language+"&title="+document.title+"&agent="+navigator.userAgent,{method:"get", credentials: "include"});</script>
+</html>

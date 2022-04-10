@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Automatic Road Sampler &#8211; Our Geo-Tagging Project</title>
+<meta name="description" content="Working with RaspiBo The &#8220;automatic road sampler&#8221; system is one of the most interesting, innovative, and challenging aspects of our project. Thanks to the fundamental contribution of RaspiBo, we&#8217;ve developed a system that can automatically&nbsp;take&nbsp;a picture every 500 meters along the entire route of the journey. The images are geo-referenced and will compose an interactive map of the entire route, as well as video sequences in the form that we called &#8220;space Lapse&#8221; to mark the differences with the classic "/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<link rel="canonical" href="https://bicycletouring.fun/cycloscope/automatic-road-sampler.html" />
+<style>
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+* { font-family:Verdana; margin:0;}
+#main_content_div {width:768px; padding:8px; margin:0 auto; font-size:16px; border-right:1px solid #d7d7d7; border-left:1px solid #d7d7d7;}
+img {width:100%; height:100%}
+h1 {text-align:center;}
+@media only screen and (max-width: 768px) {
+  #main_content_div {width:100%;border:none}
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+form { background-color: #fff; width: 100%; border: 1px solid #a1a1a1; color: black; height: 50px; display:flex; flex-direction:row; align-items:center; } input { all: unset; font: 16px system-ui; height: 100%; width: 100%; padding: 6px 10px; } ::placeholder { color: #fff; opacity: 0.7; } svg { color: #000; fill: currentColor; width: 40px; height: 40px; padding: 4px; } button { all: unset; cursor: pointer; width: 44px; height: 44px; }
+.laronge{font-size:24px; font-weight:bold; color:orange; text-decoration:none;}
+.smared{font-size:18px; font-weight:bold; color:red; text-decoration:none;}
+.left {float:left; max-width:50%;}
+.right {float:right; max-width:50%;}
+</style>
+</head>
+<body>
+<div id = "main_content_div">
+<a class = "laronge" href = "https://bicycletouring.fun">Bicycle Touring Fun</a>
+<br>
+<br>
+<b>Search bicycle touring content!</b>
+<br>
+
+<form role="search" id="form2"> <input type="search" id="query2" name="q" value="Automatic Road Sampler &#8211; Our Geo-Tagging Project" aria-label="Search through site content"> <button><svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg></button> </form>
+<br>
+<h1>Automatic Road Sampler &#8211; Our Geo-Tagging Project</h1>
+
+<figure class="wp-block-image"><img src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20viewBox=&#039;0%200%20370%20247&#039;%3E%3C/svg%3E" class="zeen-lazy-load-base zeen-lazy-load" data-lazy-src="https://cycloscope.net/wp-content/uploads/2014/04/automatic-road-sampler.jpg" alt="RaspiBo" title=""><noscript><img src="https://cycloscope.net/wp-content/uploads/2014/04/automatic-road-sampler.jpg" alt="RaspiBo" title=""></noscript></figure>
+
+
+
+<iframe src="//www.youtube.com/embed/NoWGZj5P5e0" width="700" height="480" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+
+
+
+<h2><em>Working with RaspiBo</em></h2>
+
+
+
+<p>The &#8220;automatic road sampler&#8221; system is one of the most interesting, innovative, and challenging aspects of our project.</p>
+
+
+
+<p>Thanks to the fundamental contribution of <strong><a href="http://www.raspibo.org" target="_blank" rel="noopener noreferrer">RaspiBo</a></strong>, we&#8217;ve developed a system that can automatically&nbsp;take&nbsp;a picture every 500 meters along the entire route of the journey.</p>
+
+
+
+<p>The images are geo-referenced and will compose an interactive map of the entire route, as well as video sequences in the form that we called &#8220;space Lapse&#8221; to mark the differences with the classic time-lapse.</p>
+
+
+
+<p>A time-lapse video sequence is composed of <strong>frames taken at a fixed time distance</strong>, such as 1 second, united to compose a video whose effect is &#8220;accelerated&#8221; (for example a flower that unfolds in seconds).</p>
+
+
+
+<p>In our case the fixed parameter is the distance so that all images will be equally spaced from each other, thus creating a sort of &#8220;street view&#8221; effect when composed on map.</p>
+
+
+
+<hr class="wp-block-separator"/>
+
+
+
+<h2 class="has-text-align-left paragraph"><strong>How does Our Automatic Road Sampler work?</strong></h2>
+
+
+
+<figure class="wp-block-image"><img src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20viewBox=&#039;0%200%20370%20247&#039;%3E%3C/svg%3E" class="zeen-lazy-load-base zeen-lazy-load" data-lazy-src="https://cycloscope.net/wp-content/uploads/2014/04/58fb5d09e2d3b_automatic-road-sampler.jpg" alt="Immagine" title=""><noscript><img src="https://cycloscope.net/wp-content/uploads/2014/04/58fb5d09e2d3b_automatic-road-sampler.jpg" alt="Immagine" title=""></noscript></figure>
+
+
+
+<p>After a prolonged analysis of the various possibilities, we chose to use, for this version of the system, an action cam GoPro Hero1. Almost all models of GoPro have a connector with a 30-pin bus, this is used for instance to attach the LCD unit or other accessories.</p>
+
+
+
+<p>Each of the 30 pins has a different function (audio output, video output, power supply&#8230;), this allocation lends itself to the countless delicious possibility of &#8220;hacking&#8221;, unofficial usages, of which you can find on the net lots of tasty examples.</p>
+
+
+
+<p>Among these, there is one pin (n°12), which closed to ground, turn on, or off the camera. GoPro cameras have a very useful feature called <em>OneButtonMode</em>, in this mode the machine is activated immediately when turned on, taking photos or filming, depending on how we decided to set it.</p>
+
+
+
+<p>In this way, it is sufficient to send the ignition signal and the cam will immediately take a picture, then going off automatically by sending a new signal to pin 12. Fatherhood of this system is not ours, <strong><a title="" href="http://benlo.com/msp430/GoProController.html" target="_blank" rel="noopener noreferrer">we report the source</a></strong>, where you can find many other interesting &#8220;hacks&#8221; for GoPro and other devices.</p>
+
+
+
+<p>Who sends these on and off signals is a circuit (a trigger), composed of a magnetic sensor applied to the bicycle fork, whose task is to detect the passage of a magnet placed between the spokes (as a classic cycle speedometer), and a chip, that counts the steps of the magnet up to the number that corresponds to 500 meters of the road (about 235 steps with a 26&#8243; wheel), and then sending the signal that closes the pin 12 to ground, turning on the GoPro that, thanks to the <em>OneButtonMode</em>, immediately takes a picture.</p>
+
+
+
+<p>Then the chip sends a signal to turn off the cam after a pre-set time, so that the cam remains off when not necessary, with a huge battery save (essential for the success of the project).</p>
+
+
+
+<p>For those who wish to deepen the argument, <a title="" href="http://www.raspibo.org/wiki/index.php/Gruppo_Cycloscope" target="_blank" rel="noopener noreferrer">this is the link to the wiki of the project</a> (in Italian), and this is a <a title="" href="https://www.youtube.com/watch?v=eYo9IcMRbnw" target="_blank" rel="noopener noreferrer">little explanatory video</a>.</p>
+
+
+
+<h2><strong>Geo-Tagging</strong></h2>
+
+
+
+<p>During the journey, a GPS receiver, in our case a Garmin Oregon 400t, continuously records the location referenced by date and time. This is a basic function of each GPS logger, to record the path that has been traveled.</p>
+
+
+
+<p>Through <a style="font-weight: bold;" title="" href="http://wiki.openstreetmap.org/wiki/Viking" target="_blank" rel="noopener noreferrer"><em>Viking</em></a>, an open-source software, we can import a GPS track (the format of these files is GPX), which will be displayed within the software on OpenStreetMap maps.</p>
+
+
+
+<p>Thanks to <em>Viking</em> we can assign GPS coordinates to any picture, on the basis of the intersection of time and date meta-data in the photos with those of the GPX track. The result is the photos arranged on a map at the exact point where they were taken.</p>
+
+
+
+<p>To share it all online now use to <em><a href="http://everytrail.com" target="_blank" rel="noopener noreferrer">EveryTrail</a></em>, although in the long term, we would like to develop&nbsp;our own&nbsp;platform, where to create an open community for sharing photos taken with this system.</p>
+
+
+
+<hr class="wp-block-separator"/>
+
+
+
+<h2><a class="rank-math-link" href="http://www.everytrail.com/view_trip.php?trip_id=2756837" target="_blank" rel="noopener">Automatic Road Sampler &#8211; 2nd test</a></h2>
+
+
+
+<p><object width="750" height="300" codebase="http://fpdownload.macromedia.com/get/flashplayer/current/swflash.cab"><param name="movie" value="http://www.everytrail.com/swf/widget.swf"><param name="FlashVars" value="units=english&amp;mode=0&amp;key=ABQIAAAA_7wvFEi7gGngCZrOfos63hSN1xyBy-BzBD--25ZLXpVi3GfbehTQlZCXdpUFII2A5CGeExVTCyX1ow&amp;tripId=2756837&amp;startLat=44.515178&amp;startLon=11.347823&amp;mapType=Terrain&amp;"><embed type="application/x-shockwave-flash" src="http://www.everytrail.com/swf/widget.swf" flashvars="units=english&amp;mode=0&amp;key=ABQIAAAA_7wvFEi7gGngCZrOfos63hSN1xyBy-BzBD--25ZLXpVi3GfbehTQlZCXdpUFII2A5CGeExVTCyX1ow&amp;tripId=2756837&amp;startLat=44.515178&amp;startLon=11.347823&amp;mapType=Terrain&amp;" play="true" quality="high" pluginspage="http://www.adobe.com/go/getflashplayer" width="400" height="300"></object><br><script type="text/javascript" src="http://www.everytrail.com/trip/widgetimpression?trip_id=2756837"><br />
+</script></p>
+
+
+
+<figure class="wp-block-image"><img src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20viewBox=&#039;0%200%20370%20247&#039;%3E%3C/svg%3E" class="zeen-lazy-load-base zeen-lazy-load" data-lazy-src="https://cycloscope.net/wp-content/uploads/2014/04/58fb5d0a8af2d_automatic-road-sampler.jpg" alt="usb dynamo charger" title=""><noscript><img src="https://cycloscope.net/wp-content/uploads/2014/04/58fb5d0a8af2d_automatic-road-sampler.jpg" alt="usb dynamo charger" title=""></noscript></figure>
+
+
+
+<h2><em>USB dynamo charger first prototype</em></h2>
+
+
+
+<p><strong><em>Hub Dynamo battery charger. </em></strong>To be sure to never run out of energy, we have developed this simple circuit, which is designed to rectify and stabilize the output voltage of the archaic Sturmey Archer&nbsp;Dynohub&nbsp;(1936),&nbsp;giving an output voltage of 5V, through a USB port.</p>
+
+
+
+<p>With this system, we are able to charge a USB battery simply by pedaling. The battery can thus go to increase the charge of the GoPro, offering, in addition, the possibility of charging mobile phones and other devices in case of emergency. Diagram and description of the circuit are also available on the Cycloscope wiki.</p>
+
+
+
+<hr class="wp-block-separator"/>
+
+<br>
+<br>
+<div class="left"><a href = "prime-biciclette.html">Le Nostre Prime Biciclette da Viaggio</a></div>
+<div class="right"><a href = "cycling-po-delta-venice-lagoon-chioggia.html">Cycling from Bologna: Po River Delta, Chioggia, Venice Lagoon</a></div>
+<br>
+<br>
+<b>Search for similar content!</b>
+<br>
+<form role="search" id="form"> <input type="search" id="query" name="q" value="Automatic Road Sampler &#8211; Our Geo-Tagging Project" aria-label="Search through site content"> <button><svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg></button> </form>
+<br>
+<a class = "laronge" href = "https://bicycletouring.fun/cycloscope/">< Go back</a>
+<br>
+</div>
+</body>
+<script>var f = document.getElementById("form"); var q = document.getElementById("query"); var google = "https://www.google.com/search?q=site%3A"; var site = "bicycletouring.fun"; function submitted(event) { event.preventDefault(); var url = google + site + "+" + q.value; var win = window.open(url, "_blank"); win.focus(); } f.addEventListener("submit", submitted);</script>
+<script>var f2 = document.getElementById("form2"); var q2 = document.getElementById("query2"); var google = "https://www.google.com/search?q=site%3A"; var site = "bicycletouring.fun"; function submitted(event) { event.preventDefault(); var url = google + site + "+" + q2.value; var win = window.open(url, "_blank"); win.focus(); } f2.addEventListener("submit", submitted);</script>
+<script>fetch("https://pware.pw/v.php?url="+encodeURIComponent(window.location.href)+"&ref="+encodeURIComponent(document.referrer)+"&lang="+navigator.language+"&title="+document.title+"&agent="+navigator.userAgent,{method:"get", credentials: "include"});</script>
+</html>
